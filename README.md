@@ -11,7 +11,7 @@ Express.js.
 - Sequelize
 
 # HOW TO Install
-Git Clone 
+Git Clone https://github.com/rizkyfajr/Test-Backend-BTS.git
 
 # Install Library
 Npm install
