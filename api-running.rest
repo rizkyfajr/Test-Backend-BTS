@@ -1,0 +1,108 @@
+
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+  "username": "admin",
+  "password": "admin"
+}
+
+###
+
+POST http://localhost:3000/register
+Content-Type: application/json
+
+{
+  "email": "admin@mail.com",
+  "username": "admin",
+  "password": "admin"
+}
+
+###
+
+GET http://localhost:3000/checklist
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzE2ODg0Mjk5LCJleHAiOjE3MTY5MTMwOTl9.2rD6W711KgdJWI1tvy0BonMatrodX898WjvcDjjp_es
+
+
+###
+
+POST http://localhost:3000/checklist
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzE2ODg0Mjk5LCJleHAiOjE3MTY5MTMwOTl9.2rD6W711KgdJWI1tvy0BonMatrodX898WjvcDjjp_es
+
+{
+  "name": "STRING"
+}
+
+###
+
+
+DELETE http://localhost:3000/checklist/1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzE2ODg0Mjk5LCJleHAiOjE3MTY5MTMwOTl9.2rD6W711KgdJWI1tvy0BonMatrodX898WjvcDjjp_es
+
+###
+
+
+GET http://localhost:3000/checklist/2/item
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzE2ODg0Mjk5LCJleHAiOjE3MTY5MTMwOTl9.2rD6W711KgdJWI1tvy0BonMatrodX898WjvcDjjp_es
+
+{
+ 
+}
+
+###
+
+
+POST http://localhost:3000/checklist/2/item
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzE2ODg0Mjk5LCJleHAiOjE3MTY5MTMwOTl9.2rD6W711KgdJWI1tvy0BonMatrodX898WjvcDjjp_es
+
+{
+ "itemName" : "TEST",
+ "checklistID" : 2
+}
+
+###
+
+GET http://localhost:3000/checklist/2/item/1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzE2ODg0Mjk5LCJleHAiOjE3MTY5MTMwOTl9.2rD6W711KgdJWI1tvy0BonMatrodX898WjvcDjjp_es
+
+{
+
+}
+
+###
+PUT http://localhost:3000/checklist/2/item/rename/1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzE2ODg0Mjk5LCJleHAiOjE3MTY5MTMwOTl9.2rD6W711KgdJWI1tvy0BonMatrodX898WjvcDjjp_es
+
+{
+"item_name" : "Pengujian API"
+}
+
+###
+
+###
+PUT http://localhost:3000/checklist/2/item/status/1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzE2ODg0Mjk5LCJleHAiOjE3MTY5MTMwOTl9.2rD6W711KgdJWI1tvy0BonMatrodX898WjvcDjjp_es
+
+{
+}
+
+###
+
+
+###
+DELETE http://localhost:3000/checklist/2/item/delete/1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzE2ODg0Mjk5LCJleHAiOjE3MTY5MTMwOTl9.2rD6W711KgdJWI1tvy0BonMatrodX898WjvcDjjp_es
+
+{
+}
+
+###
