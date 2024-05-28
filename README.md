@@ -34,3 +34,6 @@ npx sequelize db:migrate
 
 # RUNNING
 npm run start
+
+
+Running using extension Rest Clien in vsCode > file api-running.rest
